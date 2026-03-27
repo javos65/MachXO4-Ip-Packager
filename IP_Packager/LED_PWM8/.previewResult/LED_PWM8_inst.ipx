@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<RadiantModule architecture="jd5d00" date="2026 03 14 15:52:59" device="LFCPNX-100" device_int="jd5d80" display_module="LED_PWM8" display_vendor="JVos" family="LFCPNX" gen_platform="Propel" gen_platform_version="2025.2.0.2512111315" generator="ipgen" library="ip" module="LED_PWM8" name="LED_PWM8_inst" operation="Automotive" package="ASG256" package_int="ASG256" partnumber="LFCPNX-100-7ASG256A" source_format="Verilog" speed="7_High-Performance_1.0V" speed_int="10" vendor="JVos" version="2.0.1">
+ <Package>
+  <File modified="2026 03 14 15:52:59" name="rtl/LED_PWM8_inst_bb.v" type="black_box_verilog"/>
+  <File modified="2026 03 14 15:52:59" name="LED_PWM8_inst.cfg" type="cfg"/>
+  <File modified="2026 03 14 15:52:59" name="misc/LED_PWM8_inst_tmpl.v" type="template_verilog"/>
+  <File modified="2026 03 14 15:52:59" name="misc/LED_PWM8_inst_tmpl.vhd" type="template_vhdl"/>
+  <File modified="2026 03 14 15:52:59" name="rtl/LED_PWM8_inst.v" type="top_level_verilog"/>
+  <File modified="2026 03 14 15:52:59" name="component.xml" type="IP-XACT_component"/>
+  <File modified="2026 03 14 15:52:59" name="design.xml" type="IP-XACT_design"/>
+  <File modified="2026 03 14 14:52:54" name="driver/pwm8.c" type="driver_source"/>
+  <File modified="2026 03 14 14:52:54" name="driver/pwm8.h" type="driver_header"/>
+ </Package>
+</RadiantModule>

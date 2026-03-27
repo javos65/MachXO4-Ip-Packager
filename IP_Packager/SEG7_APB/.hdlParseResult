@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<lscc:hdlparseresult version="1.0">
+    <modules>
+        <module name="apb_slave">
+            <params/>
+            <ports>
+                <port dir="in" name="PCLK"/>
+                <port dir="in" name="RST_N"/>
+                <port dir="in" name="PADDR" range="(3,0)"/>
+                <port dir="in" name="PSEL"/>
+                <port dir="in" name="PENABLE"/>
+                <port dir="in" name="PWRITE"/>
+                <port dir="in" name="PWDATA" range="(31,0)"/>
+                <port dir="out" name="PRDATA" range="(31,0)"/>
+                <port dir="out" name="PREADY"/>
+                <port dir="out" name="PSLVERR"/>
+                <port dir="out" name="SEG7_OUT" range="(7,0)"/>
+            </ports>
+        </module>
+    </modules>
+</lscc:hdlparseresult>

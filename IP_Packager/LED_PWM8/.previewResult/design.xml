@@ -1,0 +1,150 @@
+<?xml version="1.0" ?>
+<ipxact:design xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:lattice="http://www.latticesemi.com/lattice" xmlns:lsccip="http://www.latticesemi.com/XMLSchema/Radiant/ip">
+    <ipxact:vendor>JVos</ipxact:vendor>
+    <ipxact:library>ip</ipxact:library>
+    <ipxact:name>LED_PWM8_inst</ipxact:name>
+    <ipxact:version>2.0.1</ipxact:version>
+    <ipxact:componentInstances>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>apb_pwm_led_inst</ipxact:instanceName>
+            <ipxact:componentRef library="ip" name="LED_PWM8" vendor="JVos" version="2.0.1">
+                <ipxact:configurableElementValues/>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+    </ipxact:componentInstances>
+    <ipxact:adHocConnections>
+        <ipxact:adHocConnection>
+            <ipxact:name>LED_PWM8_inst.pclk</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="LED_PWM8_inst" portRef="pclk"/>
+                <ipxact:externalPortReference portRef="pclk"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>LED_PWM8_inst.presetn</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="LED_PWM8_inst" portRef="presetn"/>
+                <ipxact:externalPortReference portRef="presetn"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>LED_PWM8_inst.paddr.31:0</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="LED_PWM8_inst" portRef="paddr">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="paddr">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>LED_PWM8_inst.psel</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="LED_PWM8_inst" portRef="psel"/>
+                <ipxact:externalPortReference portRef="psel"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>LED_PWM8_inst.penable</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="LED_PWM8_inst" portRef="penable"/>
+                <ipxact:externalPortReference portRef="penable"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>LED_PWM8_inst.pwrite</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="LED_PWM8_inst" portRef="pwrite"/>
+                <ipxact:externalPortReference portRef="pwrite"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>LED_PWM8_inst.pwdata.31:0</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="LED_PWM8_inst" portRef="pwdata">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="pwdata">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>LED_PWM8_inst.prdata.31:0</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="LED_PWM8_inst" portRef="prdata">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="prdata">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>LED_PWM8_inst.pready</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="LED_PWM8_inst" portRef="pready"/>
+                <ipxact:externalPortReference portRef="pready"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>LED_PWM8_inst.pslverr</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="LED_PWM8_inst" portRef="pslverr"/>
+                <ipxact:externalPortReference portRef="pslverr"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>LED_PWM8_inst.led_out.7:0</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="LED_PWM8_inst" portRef="led_out">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="led_out">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+    </ipxact:adHocConnections>
+</ipxact:design>

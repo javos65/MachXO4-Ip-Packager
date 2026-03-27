@@ -1,0 +1,150 @@
+<?xml version="1.0" ?>
+<ipxact:design xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:lattice="http://www.latticesemi.com/lattice" xmlns:lsccip="http://www.latticesemi.com/XMLSchema/Radiant/ip">
+    <ipxact:vendor>JVos</ipxact:vendor>
+    <ipxact:library>ip</ipxact:library>
+    <ipxact:name>SEG7_inst</ipxact:name>
+    <ipxact:version>2.0.3</ipxact:version>
+    <ipxact:componentInstances>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>apb_slave_inst</ipxact:instanceName>
+            <ipxact:componentRef library="ip" name="SEG7" vendor="JVos" version="2.0.3">
+                <ipxact:configurableElementValues/>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+    </ipxact:componentInstances>
+    <ipxact:adHocConnections>
+        <ipxact:adHocConnection>
+            <ipxact:name>SEG7_inst.PCLK</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="SEG7_inst" portRef="PCLK"/>
+                <ipxact:externalPortReference portRef="PCLK"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>SEG7_inst.RST_N</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="SEG7_inst" portRef="RST_N"/>
+                <ipxact:externalPortReference portRef="RST_N"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>SEG7_inst.PADDR.3:0</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="SEG7_inst" portRef="PADDR">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="PADDR">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>3</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>SEG7_inst.PSEL</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="SEG7_inst" portRef="PSEL"/>
+                <ipxact:externalPortReference portRef="PSEL"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>SEG7_inst.PENABLE</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="SEG7_inst" portRef="PENABLE"/>
+                <ipxact:externalPortReference portRef="PENABLE"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>SEG7_inst.PWRITE</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="SEG7_inst" portRef="PWRITE"/>
+                <ipxact:externalPortReference portRef="PWRITE"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>SEG7_inst.PWDATA.31:0</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="SEG7_inst" portRef="PWDATA">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="PWDATA">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>SEG7_inst.PRDATA.31:0</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="SEG7_inst" portRef="PRDATA">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="PRDATA">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>SEG7_inst.PREADY</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="SEG7_inst" portRef="PREADY"/>
+                <ipxact:externalPortReference portRef="PREADY"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>SEG7_inst.PSLVERR</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="SEG7_inst" portRef="PSLVERR"/>
+                <ipxact:externalPortReference portRef="PSLVERR"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>SEG7_inst.SEG7_OUT.7:0</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="SEG7_inst" portRef="SEG7_OUT">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:internalPortReference>
+                <ipxact:externalPortReference portRef="SEG7_OUT">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+    </ipxact:adHocConnections>
+</ipxact:design>

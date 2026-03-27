@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<ippackgerproject version="1.0">
+    <filegroups>
+        <filegroup filetype="metadata">
+            <file path="metadata.xml"/>
+        </filegroup>
+        <filegroup filetype="sub_metadata">
+            <file path="bus_interface.xml"/>
+            <file path="memory_map.xml"/>
+        </filegroup>
+        <filegroup filetype="rtl">
+            <file encryption="0" path="rtl/pwm_led8.v" type="verilog"/>
+        </filegroup>
+        <filegroup filetype="driver">
+            <file path="driver/pwm8.c"/>
+            <file path="driver/pwm8.h"/>
+        </filegroup>
+        <filegroup filetype="doc">
+            <file path="doc/EULA.txt"/>
+            <file path="doc/introduction.html"/>
+        </filegroup>
+        <filegroup filetype="key">
+            <file path="../../../../lscc/propel/2025.2/builder/rtf/ispfpga/data/key.txt"/>
+        </filegroup>
+        <filegroup filetype="eula">
+            <file path="doc/EULA.txt"/>
+        </filegroup>
+    </filegroups>
+</ippackgerproject>

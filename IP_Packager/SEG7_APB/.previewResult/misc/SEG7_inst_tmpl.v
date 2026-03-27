@@ -1,0 +1,11 @@
+    SEG7_inst __(.PCLK( ),
+        .RST_N( ),
+        .PADDR( ),
+        .PSEL( ),
+        .PENABLE( ),
+        .PWRITE( ),
+        .PWDATA( ),
+        .PRDATA( ),
+        .PREADY( ),
+        .PSLVERR( ),
+        .SEG7_OUT( ));

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<lscc:hdlparseresult version="1.0">
+    <modules>
+        <module name="apb_pwm_led">
+            <params/>
+            <ports>
+                <port dir="in" name="pclk"/>
+                <port dir="in" name="presetn"/>
+                <port dir="in" name="paddr" range="(31,0)"/>
+                <port dir="in" name="psel"/>
+                <port dir="in" name="penable"/>
+                <port dir="in" name="pwrite"/>
+                <port dir="in" name="pwdata" range="(31,0)"/>
+                <port dir="out" name="prdata" range="(31,0)"/>
+                <port dir="out" name="pready"/>
+                <port dir="out" name="pslverr"/>
+                <port dir="out" name="led_out" range="(7,0)"/>
+            </ports>
+        </module>
+    </modules>
+</lscc:hdlparseresult>

@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<RadiantModule architecture="jd5d00" date="2026 03 27 19:26:51" device="LFCPNX-100" device_int="jd5d80" display_module="SPI_4WIRE" display_vendor="JVos" family="LFCPNX" gen_platform="Propel" gen_platform_version="2025.2.0.2512111315" generator="ipgen" library="ip" module="SPI_4WIRE" name="SPI_4WIRE_inst" operation="Automotive" package="ASG256" package_int="ASG256" partnumber="LFCPNX-100-7ASG256A" source_format="Verilog" speed="7_High-Performance_1.0V" speed_int="10" vendor="JVos" version="3.0.5">
+ <Package>
+  <File modified="2026 03 27 19:26:51" name="rtl/SPI_4WIRE_inst_bb.v" type="black_box_verilog"/>
+  <File modified="2026 03 27 19:26:51" name="SPI_4WIRE_inst.cfg" type="cfg"/>
+  <File modified="2026 03 27 19:26:51" name="misc/SPI_4WIRE_inst_tmpl.v" type="template_verilog"/>
+  <File modified="2026 03 27 19:26:51" name="misc/SPI_4WIRE_inst_tmpl.vhd" type="template_vhdl"/>
+  <File modified="2026 03 27 19:26:51" name="rtl/SPI_4WIRE_inst.v" type="top_level_verilog"/>
+  <File modified="2026 03 27 19:26:51" name="rtl/SPI_4WIRE_inst_globals.v" type="core_verilog"/>
+  <File modified="2026 03 27 19:26:48" name="rtl/small_fifo.vhd" type="core_vhdl"/>
+  <File modified="2026 03 27 19:26:48" name="rtl/spi_oled.vhd" type="core_vhdl"/>
+  <File modified="2026 03 27 19:26:48" name="rtl/spi_oled_top.vhd" type="core_vhdl"/>
+  <File modified="2026 03 27 19:26:51" name="component.xml" type="IP-XACT_component"/>
+  <File modified="2026 03 27 19:26:51" name="design.xml" type="IP-XACT_design"/>
+  <File modified="2026 03 27 18:26:48" name="driver/font_1bpp.c" type="driver_source"/>
+  <File modified="2026 03 27 18:26:48" name="driver/font_1bpp.h" type="driver_header"/>
+  <File modified="2026 03 27 18:26:48" name="driver/font_4bpp.c" type="driver_source"/>
+  <File modified="2026 03 27 18:26:48" name="driver/font_4bpp.h" type="driver_header"/>
+  <File modified="2026 03 27 18:26:48" name="driver/ssd1306.c" type="driver_source"/>
+  <File modified="2026 03 27 18:26:48" name="driver/ssd1306.h" type="driver_header"/>
+  <File modified="2026 03 27 18:26:48" name="driver/ssd1351.c" type="driver_source"/>
+  <File modified="2026 03 27 18:26:48" name="driver/ssd1351.h" type="driver_header"/>
+ </Package>
+</RadiantModule>

@@ -1,0 +1,11 @@
+    LED_PWM8_inst __(.pclk( ),
+        .presetn( ),
+        .paddr( ),
+        .psel( ),
+        .penable( ),
+        .pwrite( ),
+        .pwdata( ),
+        .prdata( ),
+        .pready( ),
+        .pslverr( ),
+        .led_out( ));
