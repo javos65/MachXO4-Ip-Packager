@@ -44,21 +44,9 @@ const uint8_t oled_inverse[OLED_INVERSE_SIZE]={SSD1306_INVERTDISPLAY};
 uint32_t SPI_BASE; 		// Base Memory Mapped address
 
 // set SPI base address - check sys_platform.h
-void set_base_ssd1306(uint32_t address)
+void base_ssd1306(uint32_t address)
 {
 	SPI_BASE = address;
-}
-
-// set SPI base address - check sys_platform.h
-uint32_t get_base_ssd1306()
-{
-	return(SPI_BASE);
-}
-
-// set SPI base address - check sys_platform.h
-uint32_t get_id_ssd1306()
-{
-	return(readSPIMemory_ssd1306(ID_REGISTER));
 }
 
 uint8_t wait_spi_ssd1306()
@@ -70,7 +58,7 @@ uint8_t wait_spi_ssd1306()
 		if ( !(x & 0x00010000) ) return(1); // check not FULL : bit[16]
 		delay(1);
 	}
-	//printf("* spi fifo full : timeout\n");
+	printf("* spi fifo full : timeout\n");
 	return(0);
  }
 

@@ -7,7 +7,7 @@
  *     Driver code is independ from sys_platform.h definitions
  *     Initialize the pwm-driver with the right address, or let it search for the address
  *
- *     Check pwm8 for use details
+ *     Check pwm8.h for use details
  *
  */
 #include <stdio.h>
@@ -67,7 +67,7 @@ else
 	}
 }
 
-//get the 32bit PWM regiater data - no error checking
+//get the 32bit PWM register data - no error checking
 uint32_t  pwm8_getpwm()
 {
 uint32_t addr,reg;

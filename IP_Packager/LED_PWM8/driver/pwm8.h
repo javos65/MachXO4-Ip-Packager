@@ -4,7 +4,8 @@
  *  Created on: 5 Jan 2025
  *      Author: jayFox
  *
- *    Send 8 x 4-bit pwm to IO output - always running pwm
+ *    Send 8 x 16-bit pwm to IO output - always running pwm
+ *    Optical scale PWM 4bit -> 16 bits
  *
  *	  Adress 0 = APB base + 0x00000000 : ID
  *    Adress 1 = APB base + 0x00000004 : PWM
@@ -16,7 +17,7 @@
 #include <stdint.h>
 #include <stdbool.h>
 
-#define pwm8_ID 0xDEADB00B 	// IP defined ID number in VHDL-code
+#define pwm8_ID 0xB00BDEAD 				// IP defined ID number in VHDL-code
 #define REG0_PWM_ID			0x00		// 32 bit address 0 index : Read address for ID
 #define REG1_PWM_IN			0x04		// 32 bit address 1 index : Read/ Write PWM inputs
 #define REGPWMMAX			0x04

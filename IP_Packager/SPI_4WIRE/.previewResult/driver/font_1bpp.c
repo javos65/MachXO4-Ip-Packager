@@ -30,7 +30,7 @@ uint8_t  *fmap= (uint8_t*) myfont.fontmap;
 uint16_t charcursor=0;
 
 cc=0;
-//printf("Printing [%s]\n\r",text);
+printf("Printing [%s]\n\r",text);
 while( (c=text[cc]) !=0 ){
  //if(c>myfont.last) c=c-32; // change small to large ascii
  if ( (c>=myfont.first) && (c<=myfont.last)){

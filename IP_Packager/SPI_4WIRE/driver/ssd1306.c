@@ -44,33 +44,27 @@ const uint8_t oled_inverse[OLED_INVERSE_SIZE]={SSD1306_INVERTDISPLAY};
 uint32_t SPI_BASE; 		// Base Memory Mapped address
 
 // set SPI base address - check sys_platform.h
-void set_base_ssd1306(uint32_t address)
+void base_ssd1306(uint32_t address)
 {
 	SPI_BASE = address;
 }
 
-// set SPI base address - check sys_platform.h
-uint32_t get_base_ssd1306()
+uint32_t getbase_ssd1306()
 {
 	return(SPI_BASE);
 }
 
-// set SPI base address - check sys_platform.h
-uint32_t get_id_ssd1306()
-{
-	return(readSPIMemory_ssd1306(ID_REGISTER));
-}
 
 uint8_t wait_spi_ssd1306()
  {
 	uint32_t x;
 	for(uint8_t t=0;t<16;++t){
-		x=*( (uint32_t*) (SPI_BASE + STATUS_REGISTER ) );
+		x=*( (uint32_t*) (SPI_BASE + STATUS_REGISTER1306 ) );
 		//printf("* spi status 0x%08x\n",x);
 		if ( !(x & 0x00010000) ) return(1); // check not FULL : bit[16]
 		delay(1);
 	}
-	//printf("* spi fifo full : timeout\n");
+	printf("* spi fifo full : timeout\n");
 	return(0);
  }
 
@@ -78,8 +72,8 @@ uint8_t command_ssd1306(uint8_t command)
 {
 	if (wait_spi_ssd1306() )
 	{
-		*( (uint32_t*) (SPI_BASE + DATA_REGISTER)) = 0x00000000 + command;
-		*( (uint32_t*) (SPI_BASE + CONTROL_REGISTER)) = 0x00000001;
+		*( (uint32_t*) (SPI_BASE + DATA_REGISTER1306)) = 0x00000000 + command;
+		*( (uint32_t*) (SPI_BASE + CONTROL_REGISTER1306)) = 0x00000001;
 		//printf("C[0x%02X],",command);
 		return(1);
 	}
@@ -91,8 +85,8 @@ uint8_t data_ssd1306(uint8_t data)
 {
 	if (wait_spi_ssd1306() )
 	{
-		*( (uint32_t*) (SPI_BASE + DATA_REGISTER)) = 0x00000100 + data;
-		*( (uint32_t*) (SPI_BASE + CONTROL_REGISTER)) = 0x00000001;
+		*( (uint32_t*) (SPI_BASE + DATA_REGISTER1306)) = 0x00000100 + data;
+		*( (uint32_t*) (SPI_BASE + CONTROL_REGISTER1306)) = 0x00000001;
 		//printf("D[0x%02X],",data);
 		return(1);
 	}
@@ -148,6 +142,19 @@ void oled_setblock_ssd1306(uint8_t column,uint8_t page,uint8_t width, uint8_t he
 	commandlist_ssd1306(oled_graph,OLED_GRAPH_SIZE); 		// set block to full screen
 	command_ssd1306(SSD1306_SETSTARTLINE |0x00);			// set startline to zero
 }
+
+
+void oled_clearblock_ssd1306(uint8_t column,uint8_t page,uint8_t width, uint8_t height,uint8_t pattern)
+{
+	uint16_t depth = width*height;
+	oled_graph[1]= column;oled_graph[2]=column+width-1;
+	oled_graph[4]=page;oled_graph[5]=page+height-1;			// put data into indexed setup array
+	commandlist_ssd1306(oled_graph,OLED_GRAPH_SIZE); 		// set block to full screen
+	command_ssd1306(SSD1306_SETSTARTLINE |0x00);			// set startline to zero
+	for(uint16_t i=0;i<depth;++i) {data_ssd1306(pattern);}  		// send data pattern
+}
+
+
 
 // Data arrays
 

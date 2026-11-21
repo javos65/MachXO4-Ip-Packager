@@ -1,4 +1,4 @@
-    SEG7_inst __(.PCLK( ),
+    Seg7_inst __(.PCLK( ),
         .RST_N( ),
         .PADDR( ),
         .PSEL( ),

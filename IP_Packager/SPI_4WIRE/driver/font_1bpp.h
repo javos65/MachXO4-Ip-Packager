@@ -1,7 +1,7 @@
 /*
  * Font library, see https://lvgl.io/tools/font_conv_v5_3
  *
- * J.Vos 2026
+ * J.Vos 2025
  *
  * 1bpp  font 1 pixel per bit, 1 pixels  = 8 byte
  * font is column oriented for SSD1306 Page
@@ -9,7 +9,7 @@
  *
 */
 
-#include "ssd1306.h" // needed for spi graphic routines
+#include "ssd1306.h" //  needed for spi graphic routines
 
 #ifdef SSD1306_DRIVER
 

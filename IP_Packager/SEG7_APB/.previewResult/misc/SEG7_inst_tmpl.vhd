@@ -1,4 +1,4 @@
-component SEG7_inst is
+component Seg7_inst is
     port(
         PCLK: in std_logic;
         RST_N: in std_logic;
@@ -14,7 +14,7 @@ component SEG7_inst is
     );
 end component;
 
-__: SEG7_inst port map(
+__: Seg7_inst port map(
     PCLK=>,
     RST_N=>,
     PADDR=>,

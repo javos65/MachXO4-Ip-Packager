@@ -11,7 +11,7 @@
  *
  */
 
-//#define SSD1351_DRIVER // UNMARK THIS TO USE THIS DRIVER,
+#define SSD1351_DRIVER // UNMARK THIS TO USE THIS DRIVER,
 #ifdef SSD1351_DRIVER
 
 #include <stdio.h> // for printf funtion

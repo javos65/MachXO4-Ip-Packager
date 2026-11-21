@@ -1,4 +1,4 @@
-component SPI_4WIRE_inst is
+component SPI_4Wire_inst is
     port(
         clk_i: in std_logic;
         rst_n_i: in std_logic;
@@ -19,7 +19,7 @@ component SPI_4WIRE_inst is
     );
 end component;
 
-__: SPI_4WIRE_inst port map(
+__: SPI_4Wire_inst port map(
     clk_i=>,
     rst_n_i=>,
     sclk_i=>,

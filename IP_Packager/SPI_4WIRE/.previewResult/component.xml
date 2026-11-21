@@ -2,8 +2,8 @@
 <ipxact:component xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:lattice="http://www.latticesemi.com/lattice" xmlns:lsccip="http://www.latticesemi.com/XMLSchema/Radiant/ip">
     <ipxact:vendor>JVos</ipxact:vendor>
     <ipxact:library>ip</ipxact:library>
-    <ipxact:name>SPI_4WIRE_inst</ipxact:name>
-    <ipxact:version>3.0.5</ipxact:version>
+    <ipxact:name>oled_spi_inst</ipxact:name>
+    <ipxact:version>3.0.3</ipxact:version>
     <ipxact:busInterfaces>
         <ipxact:busInterface>
             <ipxact:name>APB</ipxact:name>
@@ -158,11 +158,11 @@
     <ipxact:model>
         <ipxact:instantiations>
             <ipxact:componentInstantiation>
-                <ipxact:name>SPI_4WIRE_inst</ipxact:name>
+                <ipxact:name>oled_spi_inst</ipxact:name>
             </ipxact:componentInstantiation>
             <ipxact:designInstantiation>
-                <ipxact:name>SPI_4WIRE_inst_design</ipxact:name>
-                <ipxact:designRef library="ip" name="SPI_4WIRE_inst" vendor="JVos" version="3.0.5"/>
+                <ipxact:name>oled_spi_inst_design</ipxact:name>
+                <ipxact:designRef library="ip" name="oled_spi_inst" vendor="JVos" version="3.0.3"/>
             </ipxact:designInstantiation>
         </ipxact:instantiations>
         <ipxact:ports>
@@ -302,27 +302,27 @@
         <ipxact:fileSet>
             <ipxact:name>ipx_file_list</ipxact:name>
             <ipxact:file>
-                <ipxact:name>rtl/SPI_4WIRE_inst_bb.v</ipxact:name>
+                <ipxact:name>rtl/oled_spi_inst_bb.v</ipxact:name>
                 <ipxact:fileType user="black_box_verilog">user</ipxact:fileType>
             </ipxact:file>
             <ipxact:file>
-                <ipxact:name>SPI_4WIRE_inst.cfg</ipxact:name>
+                <ipxact:name>oled_spi_inst.cfg</ipxact:name>
                 <ipxact:fileType user="cfg">user</ipxact:fileType>
             </ipxact:file>
             <ipxact:file>
-                <ipxact:name>misc/SPI_4WIRE_inst_tmpl.v</ipxact:name>
+                <ipxact:name>misc/oled_spi_inst_tmpl.v</ipxact:name>
                 <ipxact:fileType user="template_verilog">user</ipxact:fileType>
             </ipxact:file>
             <ipxact:file>
-                <ipxact:name>misc/SPI_4WIRE_inst_tmpl.vhd</ipxact:name>
+                <ipxact:name>misc/oled_spi_inst_tmpl.vhd</ipxact:name>
                 <ipxact:fileType user="template_vhdl">user</ipxact:fileType>
             </ipxact:file>
             <ipxact:file>
-                <ipxact:name>rtl/SPI_4WIRE_inst.v</ipxact:name>
+                <ipxact:name>rtl/oled_spi_inst.v</ipxact:name>
                 <ipxact:fileType user="top_level_verilog">user</ipxact:fileType>
             </ipxact:file>
             <ipxact:file>
-                <ipxact:name>rtl/SPI_4WIRE_inst_globals.v</ipxact:name>
+                <ipxact:name>rtl/oled_spi_inst_globals.v</ipxact:name>
                 <ipxact:fileType user="core_verilog">user</ipxact:fileType>
             </ipxact:file>
             <ipxact:file>
@@ -352,10 +352,6 @@
             <ipxact:file>
                 <ipxact:name>driver/font_4bpp.c</ipxact:name>
                 <ipxact:fileType user="driver_source">user</ipxact:fileType>
-            </ipxact:file>
-            <ipxact:file>
-                <ipxact:name>driver/font_4bpp.h</ipxact:name>
-                <ipxact:fileType user="driver_header">user</ipxact:fileType>
             </ipxact:file>
             <ipxact:file>
                 <ipxact:name>driver/ssd1306.c</ipxact:name>
@@ -389,10 +385,6 @@
                 <ipxact:fileType user="driver_source">user</ipxact:fileType>
             </ipxact:file>
             <ipxact:file>
-                <ipxact:name>driver/font_4bpp.h</ipxact:name>
-                <ipxact:fileType user="driver_header">user</ipxact:fileType>
-            </ipxact:file>
-            <ipxact:file>
                 <ipxact:name>driver/ssd1306.c</ipxact:name>
                 <ipxact:fileType user="driver_source">user</ipxact:fileType>
             </ipxact:file>
@@ -411,7 +403,7 @@
         </ipxact:fileSet>
     </ipxact:fileSets>
     <ipxact:vendorExtensions>
-        <lsccip:moduleRef lsccip:display_name="SPI_4WIRE" lsccip:display_vendor="JVos" lsccip:library="ip" lsccip:name="SPI_4WIRE" lsccip:type="oled SPI" lsccip:vendor="JVos" lsccip:version="3.0.5"/>
+        <lsccip:moduleRef lsccip:display_name="oled_spi" lsccip:display_vendor="JVos" lsccip:library="ip" lsccip:name="oled_spi" lsccip:type="oled SPI" lsccip:vendor="JVos" lsccip:version="3.0.3"/>
         <lsccip:instantiatedOnce>true</lsccip:instantiatedOnce>
         <lsccip:deviceInfo>
             <lsccip:device>LFCPNX-100</lsccip:device>
@@ -427,7 +419,7 @@
         </lsccip:deviceInfo>
         <lsccip:generationInfo>
             <lsccip:fileVersion>20180929</lsccip:fileVersion>
-            <lsccip:createdTimestamp>2026 03 27 19:26:51</lsccip:createdTimestamp>
+            <lsccip:createdTimestamp>2026 02 22 22:49:33</lsccip:createdTimestamp>
             <lsccip:radiantBuild>&quot;Lattice Propel&quot; (64-bit) 2025.2.0.2512111315</lsccip:radiantBuild>
         </lsccip:generationInfo>
     </ipxact:vendorExtensions>

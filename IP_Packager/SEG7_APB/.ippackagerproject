@@ -21,7 +21,7 @@
             <file path="doc/introduction.html"/>
         </filegroup>
         <filegroup filetype="key">
-            <file path="../../../../lscc/propel/2025.2/builder/rtf/ispfpga/data/key.txt"/>
+            <file path="../../../propel/2025.2/builder/rtf/ispfpga/data/key.txt"/>
         </filegroup>
         <filegroup filetype="eula">
             <file path="doc/EULA.txt"/>

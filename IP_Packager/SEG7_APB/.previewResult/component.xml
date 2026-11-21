@@ -2,7 +2,7 @@
 <ipxact:component xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:lattice="http://www.latticesemi.com/lattice" xmlns:lsccip="http://www.latticesemi.com/XMLSchema/Radiant/ip">
     <ipxact:vendor>JVos</ipxact:vendor>
     <ipxact:library>ip</ipxact:library>
-    <ipxact:name>SEG7_inst</ipxact:name>
+    <ipxact:name>Seg7_inst</ipxact:name>
     <ipxact:version>2.0.3</ipxact:version>
     <ipxact:busInterfaces>
         <ipxact:busInterface>
@@ -158,11 +158,11 @@
     <ipxact:model>
         <ipxact:instantiations>
             <ipxact:componentInstantiation>
-                <ipxact:name>SEG7_inst</ipxact:name>
+                <ipxact:name>Seg7_inst</ipxact:name>
             </ipxact:componentInstantiation>
             <ipxact:designInstantiation>
-                <ipxact:name>SEG7_inst_design</ipxact:name>
-                <ipxact:designRef library="ip" name="SEG7_inst" vendor="JVos" version="2.0.3"/>
+                <ipxact:name>Seg7_inst_design</ipxact:name>
+                <ipxact:designRef library="ip" name="Seg7_inst" vendor="JVos" version="2.0.3"/>
             </ipxact:designInstantiation>
         </ipxact:instantiations>
         <ipxact:ports>
@@ -273,23 +273,23 @@
         <ipxact:fileSet>
             <ipxact:name>ipx_file_list</ipxact:name>
             <ipxact:file>
-                <ipxact:name>rtl/SEG7_inst_bb.v</ipxact:name>
+                <ipxact:name>rtl/Seg7_inst_bb.v</ipxact:name>
                 <ipxact:fileType user="black_box_verilog">user</ipxact:fileType>
             </ipxact:file>
             <ipxact:file>
-                <ipxact:name>SEG7_inst.cfg</ipxact:name>
+                <ipxact:name>Seg7_inst.cfg</ipxact:name>
                 <ipxact:fileType user="cfg">user</ipxact:fileType>
             </ipxact:file>
             <ipxact:file>
-                <ipxact:name>misc/SEG7_inst_tmpl.v</ipxact:name>
+                <ipxact:name>misc/Seg7_inst_tmpl.v</ipxact:name>
                 <ipxact:fileType user="template_verilog">user</ipxact:fileType>
             </ipxact:file>
             <ipxact:file>
-                <ipxact:name>misc/SEG7_inst_tmpl.vhd</ipxact:name>
+                <ipxact:name>misc/Seg7_inst_tmpl.vhd</ipxact:name>
                 <ipxact:fileType user="template_vhdl">user</ipxact:fileType>
             </ipxact:file>
             <ipxact:file>
-                <ipxact:name>rtl/SEG7_inst.v</ipxact:name>
+                <ipxact:name>rtl/Seg7_inst.v</ipxact:name>
                 <ipxact:fileType user="top_level_verilog">user</ipxact:fileType>
             </ipxact:file>
             <ipxact:file>
@@ -318,7 +318,7 @@
         </ipxact:fileSet>
     </ipxact:fileSets>
     <ipxact:vendorExtensions>
-        <lsccip:moduleRef lsccip:display_name="SEG7" lsccip:display_vendor="JVos" lsccip:library="ip" lsccip:name="SEG7" lsccip:vendor="JVos" lsccip:version="2.0.3"/>
+        <lsccip:moduleRef lsccip:display_name="Seg7" lsccip:display_vendor="JVos" lsccip:library="ip" lsccip:name="Seg7" lsccip:vendor="JVos" lsccip:version="2.0.3"/>
         <lsccip:deviceInfo>
             <lsccip:device>LFCPNX-100</lsccip:device>
             <lsccip:device_int>jd5d80</lsccip:device_int>
@@ -333,7 +333,7 @@
         </lsccip:deviceInfo>
         <lsccip:generationInfo>
             <lsccip:fileVersion>20180929</lsccip:fileVersion>
-            <lsccip:createdTimestamp>2026 03 27 19:10:23</lsccip:createdTimestamp>
+            <lsccip:createdTimestamp>2026 02 21 13:27:26</lsccip:createdTimestamp>
             <lsccip:radiantBuild>&quot;Lattice Propel&quot; (64-bit) 2025.2.0.2512111315</lsccip:radiantBuild>
         </lsccip:generationInfo>
     </ipxact:vendorExtensions>

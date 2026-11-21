@@ -3,7 +3,7 @@
  *
  * SSD1306 Include file
  *
- * J.Vos 2026
+ * J.Vos 2025
  *
  *  Define Control set
  *  Define Memory mapped registers to SPI
@@ -29,7 +29,7 @@
  *
  */
 
-#define SSD1306_DRIVER // UNMARK THIS TO USE THIS DRIVER INCL 1BPP FONT !!!
+//#define SSD1306_DRIVER // UNMARK THIS TO USE THIS DRIVER INCL 1BPP FONT !!!
 #ifdef SSD1306_DRIVER
 
 #include <stdio.h> // for printf funtion
@@ -38,10 +38,10 @@
 #ifndef SSD1306H_
 #define SSD1306_H_
 
-#define ID_REGISTER 		0x00		// offset ID 		read only
-#define STATUS_REGISTER 	0x04		// offset Status 	read only
-#define CONTROL_REGISTER 	0x08		// offset Control 	read / write
-#define DATA_REGISTER 		0x0c		// offset Data 		read / write
+#define ID_REGISTER 0x00			// offset ID 		read only
+#define STATUS_REGISTER 0x04		// offset Status 	read only
+#define CONTROL_REGISTER 0x08		// offset Control 	read / write
+#define DATA_REGISTER 0x0c			// offset Data 		read / write
 
 #define STATUS_SPI_READY  0
 #define STATUS_SPI_ERROR 17
@@ -102,11 +102,8 @@
 uint32_t readSPIMemory_ssd1306(uint8_t offset);
 void writeSPIMemory_ssd1306(uint8_t offset,uint32_t data);
 
-// SPI ssd1306 routines
-void set_base_ssd1306(uint32_t address);
-uint32_t get_base_ssd1306();
-uint32_t get_id_ssd1306();
-
+// SPI ssd1351 routines
+void base_ssd1306(uint32_t address);
 void  commandlist_ssd1306(const uint8_t* list,uint8_t size);
 uint8_t command_ssd1306(uint8_t command);
 uint8_t data_ssd1306(uint8_t data);
@@ -129,5 +126,6 @@ extern const uint8_t oled_inverse[1];
 extern const uint8_t lattice_logo[ LATTICE_SIZE];
 
 
-#endif				/* SSD1306_H_ */
-#endif 				/* SSD1306_DRIVER */
+#endif /* SSD1306_DRIVER */
+
+#endif				/* SSD1351_H_ */

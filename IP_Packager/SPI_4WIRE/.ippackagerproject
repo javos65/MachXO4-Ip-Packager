@@ -17,7 +17,6 @@
             <file path="driver/font_1bpp.c"/>
             <file path="driver/font_1bpp.h"/>
             <file path="driver/font_4bpp.c"/>
-            <file path="driver/font_4bpp.h"/>
             <file path="driver/ssd1306.c"/>
             <file path="driver/ssd1306.h"/>
             <file path="driver/ssd1351.c"/>

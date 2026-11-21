@@ -3,9 +3,9 @@
     <lsccip:general>
         <lsccip:vendor>JVos</lsccip:vendor>
         <lsccip:library>ip</lsccip:library>
-        <lsccip:name>SEG7</lsccip:name>
-        <lsccip:display_name>SEG7</lsccip:display_name>
-        <lsccip:version>2.0.4</lsccip:version>
+        <lsccip:name>Seg7</lsccip:name>
+        <lsccip:display_name>Seg7</lsccip:display_name>
+        <lsccip:version>2.0.3</lsccip:version>
         <lsccip:category />
         <lsccip:keywords>lcd, 7segment, apb</lsccip:keywords>
         <lsccip:min_radiant_version>2025.2</lsccip:min_radiant_version>

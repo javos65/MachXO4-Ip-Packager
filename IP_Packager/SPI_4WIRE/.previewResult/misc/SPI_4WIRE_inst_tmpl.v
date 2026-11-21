@@ -1,4 +1,4 @@
-    SPI_4WIRE_inst __(.clk_i( ),
+    SPI_4Wire_inst __(.clk_i( ),
         .rst_n_i( ),
         .sclk_i( ),
         .PSEL( ),
